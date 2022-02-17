@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    
+    <context:component-scan base-package="com.ait"></context:component-scan>
+
+
+
+<bean id="s1" class="com.ait.Student" autowire="byType">
+<property name="sid" value="101"></property>
+<property name="sname" value="shekhar"></property>
+<property name="percent" value="98"></property>
+<property name="course" ref=""></property>
+</bean>
+
+<bean id="s2" class="com.ait.Student" >
+<property name="sid" value="102"></property>
+<property name="sname" value="chandra"></property>
+<property name="percent" value="96"></property>
+</bean>
+
+<bean  id="s3" class="com.ait.Student" >
+<constructor-arg value="103"/>
+<constructor-arg value="amit"/>
+<constructor-arg value="67"/>
+
+</bean>
+
+<bean id="c1" class="com.ait.Course" >
+<constructor-arg value="java"></constructor-arg>
+<constructor-arg value="40000"></constructor-arg>
+</bean>
+
+
+</beans>
