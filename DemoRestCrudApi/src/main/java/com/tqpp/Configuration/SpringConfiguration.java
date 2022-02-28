@@ -1,6 +1,6 @@
 package com.tqpp.Configuration;
 
-import java.util.Properties; 
+import java.util.Properties;  
 
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;

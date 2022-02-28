@@ -1,21 +1,21 @@
-package com.tqpp.configuration;
+package com.tqpp.Configuration;
 
-import org.springframework.web.context.WebApplicationContext;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
-import org.springframework.web.servlet.support.AbstractDispatcherServletInitializer;
 
-public class MyFrontController extends AbstractAnnotationConfigDispatcherServletInitializer {
+
+public class MyFrontController extends AbstractAnnotationConfigDispatcherServletInitializer
+{
 
 	@Override
 	protected Class<?>[] getRootConfigClasses() {
-		
-		return new Class[] {SpringConfiguration.class};
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 	@Override
 	protected Class<?>[] getServletConfigClasses() {
 		// TODO Auto-generated method stub
-		return null;
+		return new Class[] {SpringConfiguration.class};
 	}
 
 	@Override
@@ -24,7 +24,5 @@ public class MyFrontController extends AbstractAnnotationConfigDispatcherServlet
 		return new String[] {"/"};
 	}
 
-	
-	
-
 }
+
